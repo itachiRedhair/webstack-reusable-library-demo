@@ -1,0 +1,15 @@
+.container {
+  padding: 5px;
+}
+
+.gray {
+  background: lightgray;
+}
+
+.green {
+  background: darkgreen;
+}
+
+.checked {
+  color: orange;
+}

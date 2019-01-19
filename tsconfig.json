@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ws-library": [
+        "dist/ws-library"
+      ],
+      "ws-library/*": [
+        "dist/ws-library/*"
+      ]
+    }
   }
 }

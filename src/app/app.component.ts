@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ThemeService } from '../../projects/ws-library/src/public_api';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ws-library-demo';
+  constructor(private themeService: ThemeService) {}
+
+  onThemeChange(newTheme) {
+    this.themeService.changeTheme(newTheme);
+  }
 }
